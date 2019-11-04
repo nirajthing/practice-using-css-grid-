@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background: #ccc;
+  line-height: 2;
+  margin: 30px;
+}
+
+.btn {
+  background: #333;
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.wrapper .main-nav {
+  background: #ddd;
+  height: 3rem;
+}
+
+.wrapper .main-nav .navlinks li:nth-child(3) a {
+  color: red;
+}
+
+.wrapper .main-nav ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+.wrapper .main-nav a {
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.top-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+      grid-template-areas: 'main-display main-display top-box-a' 'main-display main-display top-box-b';
+}
+
+.main-display {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main-display;
+  min-height: 400px;
+  background: url("./images/hills-sky-night-beauty-landscapes-abstract-backgrounds-wallpapers.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+}
+
+.top-box-a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: top-box-b;
+}
+
+.boxes {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  color: aliceblue;
+}
+
+.boxes .box {
+  position: relative;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  background: #111;
+}
+
+.boxes .box i {
+  font-size: 80px;
+  color: #2db639;
+}
+
+.boxes .box h3 {
+  font-size: 40px;
+}
+
+.boxes .box:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px 0 0 20px;
+  /* (first radius values) / top-left | top-right | bottom-right | bottom-left */
+}
+
+.info {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.images {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (min-width: 514px) {
+  .main-nav a {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
